@@ -3,10 +3,10 @@ import '../styles/Contact.css';
 import { sendForm } from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
- 
+
 export const Contact = () => {
   const form = useRef();
- const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -14,26 +14,26 @@ export const Contact = () => {
       'service_bfj4jw8',
       'template_b741vy7',
       form.current,
-      'IdjjJa1wjSwqvOZNi' 
+      'IdjjJa1wjSwqvOZNi'
     )
       .then((result) => {
         console.log('Message sent:', result.text);
         toast.success('Message sent successfully!', {
-          position: 'top-right'
+          position: 'top-right',
         });
       })
       .catch((error) => {
         console.log('Error:', error.text);
         toast.error('Failed to send message!', {
-          position: 'top-right'
+          position: 'top-right',
         });
       })
-      .finally(()=>{
+      .finally(() => {
         setIsSubmitting(false);
         e.target.reset();
       });
   };
- 
+
   return (
     <section className="contact" id="contact">
       <h2 className="heading">

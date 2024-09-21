@@ -1,29 +1,14 @@
-import "./App.css";
-import { Home } from "./components/Home";
-import { Header } from "./components/Header";
-import { About } from "./components/About";
-import { Skill } from "./components/Skill";
-import { Education } from "./components/Education";
-import { Project } from "./components/Project";
-import { Experience } from "./components/Experience";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { ScrollTopButton } from "./components/ScrollTopButton";
+import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Main } from './components/Main';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Home />
-      <About />
-      <Skill />
-      <Education />
-      <Project />
-      <Experience />
-      <Contact />
-      <Footer />
-      <ScrollTopButton />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" exact Component={Main}></Route>
+      </Routes>
+    </Router>
   );
 }
 

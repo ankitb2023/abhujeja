@@ -1,0 +1,6 @@
+# Add files here to ignore them from EsLint
+
+/dist
+/coverage
+/build
+/node_modules

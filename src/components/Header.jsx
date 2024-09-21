@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "../styles/Header.css";
+import React, { useState } from 'react';
+import '../styles/Header.css';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false); // For responsive menu toggle
@@ -11,7 +11,7 @@ export const Header = () => {
 
   const toggleTheme = () => {
     setDarkTheme(!darkTheme);
-    document.body.classList.toggle("dark-theme"); // Toggles dark theme
+    document.body.classList.toggle('dark-theme'); // Toggles dark theme
   };
   return (
     <header>
@@ -19,7 +19,7 @@ export const Header = () => {
         <i className="fab fa-angular"></i> Ankit
       </a>
       <div id="menu" className="fas fa-bars" onClick={toggleMenu}></div>
-      <nav className={`navbar ${menuOpen ? "active" : ""}`}>
+      <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
         <ul>
           <li>
             <a className="active" href="#home">

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/ScrollTopButton.css'; // Assume your CSS styles are in this file.
- 
+
 export const ScrollTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
- 
+
   // Show or hide the button depending on scroll position
   const toggleVisibility = () => {
     if (window.scrollY > 10) {
@@ -12,7 +12,7 @@ export const ScrollTopButton = () => {
       setIsVisible(false);
     }
   };
- 
+
   // Scroll the page to the top
   const scrollToTop = () => {
     window.scrollTo({
@@ -20,7 +20,7 @@ export const ScrollTopButton = () => {
       behavior: 'smooth', // Smooth scrolling
     });
   };
- 
+
   // Add event listener on scroll
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
@@ -28,7 +28,7 @@ export const ScrollTopButton = () => {
       window.removeEventListener('scroll', toggleVisibility);
     };
   }, []);
- 
+
   return (
     <a
       href="#home"
