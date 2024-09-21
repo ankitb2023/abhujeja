@@ -1,13 +1,184 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+  text-transform:capitalize;
+  transition: all .2s linear;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root{
+  --zero-color:#000;
+  --btn-color:#fff;
+  --primary-color:#f7f7f7;
+  --secondary-color:rgba(255, 255, 255, 0.918);
+  --third-color:rgb(14, 36, 49);
+  --fourth-color:#7303a7;
+  --fifth-color:#ff7b00;
+  --sixth-color:#011aff;
+  --seven-color:rgb(24, 2, 63);
+  --eight-color:rgb(14, 15, 49);
+  --nine-color:#ffd000ea;
+  --ten-color:#940808;
+  /* for buttons */
+  --eleven-color:#2506ad;
+  --twelve-color:#3044f799;
+  --thirteen-color:#1a047e;
+ 
+  /* social button */
+  --fourteen-color:#00d9ff;
+
+  /* Skills */
+  --fifteen-color:linear-gradient(to bottom, #57059e, #00d1e0);
+  --sixteen-color:rgba( 0, 0, 22, 0.4);
+  --seventeen-color:rgba( 0, 0, 22, 0.9);
+  --eighteen-color:#fff;
+  --nineteen-color:rgba(4, 118, 122, 0.4);
+
+  /* Education */
+  --twenty-color:#e5ecfb;
+  --tweone:rgb(252, 252, 252);
+  --twetwo:rgb(34, 109, 0);
+
+  /* Work */
+  --twethree:linear-gradient(to bottom, #000031, #00002c);
+  --twefour-color:#fff;
+  --twefive-color:rgb(255, 230, 0);
+  --twesix-color:#310ae0f5;
+  --tweseven-color:rgba(65, 84, 241, 0.4);
+  --exe1-color:#fff;
+  
+  /* Experience */
+  --tweeight-color:#020133;
+  --twenine-color:#FF9F55;
+  --thirty-color:#f68c09;
+  --thirtyone-color:#f6ab09;
+  --thirtytwo-color:rgb(51, 51, 51); 
+   --exe2-color:#fff;
+ 
+
+  /* Shadow */
+   --shadow-color:rgba(0,0,0,0.3);
+   --shadow2-color:rgba(0,0,0,0.1);
+
+
+   /* Footer */
+   --foot1-color:#ccc;
+   --foot2-color:#E90606; 
+    --foot3-color:#020133;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark-theme{
+  --btn-color:#fff;
+   --zero-color:#fffdfd;
+   --primary-color:#5e5858;
+   --secondary-color:rgba(14, 9, 9, 0.918);
+   /* heading */
+   --third-color:rgb(230, 243, 255);
+   /* Heading */
+   --fourth-color:#f70303;
+    /*Span  */
+   --fifth-color:#fc0d2c;
+   /* Themeor navbar */
+   --sixth-color:#01ff80;
+   --seven-color:rgb(161, 160, 163);
+   /* Hi there */
+   --eight-color:rgb(246, 247, 250);
+   /* Photo */
+   --nine-color:#fca30d;
+   /* typing */
+   --ten-color:#4dd1ac;
+   /* for buttons */
+   --eleven-color:#06ad49;
+   --twelve-color:#759176;
+   --thirteen-color:#17b38c;
+  
+   /* social button */
+   --fourteen-color:#e44934e7;
+ 
+   /* Skills */
+   --fifteen-color:linear-gradient(to bottom, #aa192c, #00e083);
+   --sixteen-color:rgba(145, 33, 18, 0.4);
+   --seventeen-color:rgba(6, 18, 73, 0.9);
+   --eighteen-color:#fff;
+   --nineteen-color:rgba(4, 118, 122, 0.4);
+ 
+   /* Education */
+   --twenty-color:linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+   ;
+   --tweone:rgb(51, 29, 29);
+   --twetwo:rgb(184, 224, 160);
+ 
+   /* Work */
+   --twethree:linear-gradient(to bottom, #5c0250, #70220a);
+   --twefour-color:#fff;
+   --twefive-color:rgb(255, 0, 0);
+   --twesix-color:#06ad49;
+   --tweseven-color:rgba(65, 84, 241, 0.4);
+    --exe1-color:#17b38c;
+
+   /* Experience */
+   --tweeight-color:#e2e2f0d8;
+   --twenine-color:#dd4710;
+   --thirty-color:#ac3c14;
+   --thirtyone-color:#e74f1a;
+   --thirtytwo-color:rgb(51, 51, 51);
+   --exe2-color:linear-gradient(to bottom,#000 ,#792a13 );
+ 
+   /* Shadow */
+    --shadow-color:rgba(0,0,0,0.3);
+    --shadow2-color:rgba(0,0,0,0.1);
+ 
+ 
+    /* Footer */
+    --foot1-color:#ccc;
+    --foot2-color:#E90606;
+    --foot3-color:#000;
 }
+body{
+  background: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+*::selection{
+  background: #2b3dda;
+  color: #fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+html::-webkit-scrollbar-track{
+  background: rgb(235, 202, 245);
+}
+html::-webkit-scrollbar-thumb{
+  background: #420177;
+}
+
+/* common media queries starts*/
+@media(max-width:450px){
+  html{
+    font-size: 55%;
+  }
+  body{
+    padding-right: 0;
+  }
+  section{
+    padding: 2rem;
+  }
+}
+/* common media queries ends*/
+

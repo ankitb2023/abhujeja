@@ -1,0 +1,154 @@
+
+/* skills section starts */
+.skills{
+    background: var(--fifteen-color);
+  }
+  .skills h2{
+    color: var(--eighteen-color);
+  }
+  .skills .heading span{
+    color: var(--fifth-color);
+  }
+  .skills .container{
+    background: var(--sixteen-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+  }
+  .skills .container .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-wrap: wrap;
+  }
+  .skills .container .row .col{
+    display: grid;
+  }
+  .skills .container .col{
+    position: relative;
+    width: 90%;
+    color: var(--eighteen-color);
+    margin-top: .5rem;
+  }
+  .skills .container .col .bar{
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    background: var(--seventeen-color);
+    transition: .2s;
+  }
+  .skills .container .col .bar:hover{
+    transform: translateX(12px);
+    box-shadow: 0 5px 8px var(--nineteen-color);
+  }
+  .skills .container .col .bar .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .skills .container .col .bar .info i{
+    font-size: 1.4rem;
+  }
+  .skills .container .col .bar .info span{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin-left: .5rem;
+  }
+  .skills .container .col .bar .line{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 6px;
+  }
+  .skills .container .col .bar .line:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+  }
+  .skills .container .col .bar .reactjs:before{
+    width: 92%;
+    background: #2962ff;
+  }
+  .skills .container .col .bar .html:before{
+    width: 90%;
+    background: #e03d0b;
+  }
+  .skills .container .col .bar .css:before{
+    width: 89%;
+    background: #2962ff;
+  }
+  .skills .container .col .bar .javascript:before{
+    width: 87%;
+    background: #ffd900;
+  }
+  
+  .skills .container .col .bar .node:before{
+    width: 81%;
+    background: #8054c7;
+  }
+  .skills .container .col .bar .blockchain:before{
+    width: 82%;
+    background: #f38b03;
+  }
+  
+  .skills .container .col .bar .java:before{
+    width: 91%;
+    background: #ce0505;
+  }
+  .skills .container .col .bar .Cpp:before{
+    width: 84%;
+    background: #f7d203;
+  }
+  .skills .container .col .bar .clanguage:before{
+    width: 89%;
+    background: #2fdf7e;
+  }
+  .skills .container .col .bar .sql:before{
+    width: 90%;
+    background: #298521;
+  }
+  .skills .container .col .bar .vcs:before{
+    width: 84%;
+    background: #f14e32;
+  }
+  .skills .container .col .bar .gcp:before{
+    width: 78%;
+    background: #1771e7;
+  }
+  .skills .container .col .bar .firebase:before{
+    width: 84%;
+    background: #ffae00;
+  }
+  
+  /* skills media queries starts*/
+  @media screen and (max-width: 600px){
+    .skills .container{
+      padding: 0;
+      margin: 0;
+    }
+    .skills .container .row{
+      grid-template-columns: repeat(1,1fr);
+      margin: 1rem;
+      padding-top: 2rem;
+    }
+    .skills .container .col{
+      margin-top: 5px;
+      width: 100%;
+    }
+    .skills .container .col .bar{
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    .skills .container .col .bar .line{
+      height: .8rem;
+    }
+  }
+  /* skills media queries ends*/
+  /* skills section ends */
+  
