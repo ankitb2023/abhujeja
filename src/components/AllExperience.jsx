@@ -1,17 +1,15 @@
 import React from 'react';
-import '../styles/Experience.css';
-import { Link } from 'react-router-dom';
 import { experienceData } from '../data/Experience';
+import { Link } from 'react-router-dom';
 
-export const Experience = () => {
-  const miniExperienceData = experienceData.slice(0, 5);
+export const AllExperience = () => {
   return (
-    <section className="experience" id="experience">
+    <section className="experience mt-5" id="experience">
       <h2 className="heading">
         <i className="fas fa-briefcase"></i> Experience
       </h2>
       <div className="timeline">
-        {miniExperienceData.map((experience, index) => (
+        {experienceData.map((experience, index) => (
           <div
             className={`container ${index % 2 === 0 ? 'left' : 'right'}`}
             key={index}
@@ -29,8 +27,8 @@ export const Experience = () => {
         ))}
       </div>
       <div className="morebtn">
-        <Link to="/viewAllExperience" className="btn">
-          <span>View All</span> <i className="fas fa-arrow-right"></i>
+        <Link to="/" className="btn">
+          <span>Back To Home</span> <i className="fas fa-arrow-left"></i>
         </Link>
       </div>
     </section>

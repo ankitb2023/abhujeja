@@ -1,17 +1,15 @@
 import React from 'react';
-import '../styles/Project.css';
 import { projectsData } from '../data/Project';
 import { Link } from 'react-router-dom';
 
-export const Project = () => {
-  const miniProjectsData = projectsData.slice(0, 6);
+export const AllProject = () => {
   return (
-    <section className="work" id="work">
+    <section className="work mt-5" id="work">
       <h2 className="heading">
         <i className="fas fa-laptop-code"></i> Projects <span>Made</span>
       </h2>
       <div className="box-container">
-        {miniProjectsData.map((project, index) => (
+        {projectsData.map((project, index) => (
           <div className="box tilt" key={index}>
             <img draggable="false" src={project.imgSrc} alt={project.title} />
             <div className="content">
@@ -44,8 +42,8 @@ export const Project = () => {
         ))}
       </div>
       <div className="viewall">
-        <Link to="/viewAllProject" className="btn">
-          <span>View All</span> <i className="fas fa-arrow-right"></i>
+        <Link to="/" className="btn">
+          <span>Back To home</span> <i className="fas fa-arrow-left"></i>
         </Link>
       </div>
     </section>
