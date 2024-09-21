@@ -1,0 +1,20 @@
+
+/* scroll top starts */
+#scroll-top {
+  position: fixed;
+  top: -170%;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  background: var(--thirtyone-color);
+  color: var(--tweeight-color);
+  border-radius: 50%;
+  transition: 1s linear;
+  z-index: 100;
+  cursor: pointer;
+}
+ 
+#scroll-top.active {
+  top: calc(100% - 10rem);
+}
+  /* scroll top ends */
