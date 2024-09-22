@@ -6,7 +6,7 @@ export const ScrollTopButton = () => {
 
   // Show or hide the button depending on scroll position
   const toggleVisibility = () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 60) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

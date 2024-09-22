@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/Footer.css';
+import { useHandleNavigation } from '../customhook/useHandleNavigation';
 export const Footer = () => {
+  const handleNavClick = useHandleNavigation();
   return (
     <section className="footer">
       <div className="box-container">
@@ -16,22 +18,26 @@ export const Footer = () => {
         {/* Quick Links */}
         <div className="box">
           <h3>Quick Links</h3>
-          <a href="#home">
+          <a onClick={() => handleNavClick('home')}>
             <i className="fas fa-chevron-circle-right"></i> Home
           </a>
-          <a href="#about">
+          <a
+            onClick={() => {
+              handleNavClick('about');
+            }}
+          >
             <i className="fas fa-chevron-circle-right"></i> About
           </a>
-          <a href="#skills">
+          <a onClick={() => handleNavClick('skills')}>
             <i className="fas fa-chevron-circle-right"></i> Skills
           </a>
-          <a href="#education">
+          <a onClick={() => handleNavClick('education')}>
             <i className="fas fa-chevron-circle-right"></i> Education
           </a>
-          <a href="#work">
+          <a onClick={() => handleNavClick('work')}>
             <i className="fas fa-chevron-circle-right"></i> Projects
           </a>
-          <a href="#experience">
+          <a onClick={() => handleNavClick('experience')}>
             <i className="fas fa-chevron-circle-right"></i> Internship |
             Volunteering | Contribution
           </a>

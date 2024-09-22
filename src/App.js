@@ -4,23 +4,25 @@ import { Main } from './components/Main';
 import { AllExperience } from './components/AllExperience';
 import { AllProject } from './components/AllProject';
 import { Layout } from './components/Layout';
-
+import { usePageVisibility } from './customhook/usePageVisibility';
+import { ScrollAnimation } from './components/ScrollAnimation';
+ 
 function App() {
+  usePageVisibility();
+ 
   return (
     <Router>
+      <ScrollAnimation>
       <Layout>
         <Routes>
-          <Route path="/" exact Component={Main}></Route>
-          <Route
-            path="/viewAllExperience"
-            exact
-            Component={AllExperience}
-          ></Route>
-          <Route path="/viewAllProject" exact Component={AllProject}></Route>
+          <Route path="/" element={<Main />} />
+          <Route path="/viewAllExperience" element={<AllExperience />} />
+          <Route path="/viewAllProject" element={<AllProject />} />
         </Routes>
       </Layout>
+      </ScrollAnimation>
     </Router>
   );
 }
-
+ 
 export default App;

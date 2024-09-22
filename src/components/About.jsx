@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../styles/About.css';
+import VanillaTilt from 'vanilla-tilt';
 export const About = () => {
+  const tiltRef = useRef(null); 
+ 
+  useEffect(() => {
+    if(tiltRef.current){
+    VanillaTilt.init(tiltRef.current, {
+      max: 15, 
+      speed: 400,
+      glare: true, 
+      'max-glare': 0.5,
+    });
+  }
+    return () => {
+      if(tiltRef.current && tiltRef.current.vanillaTilt){
+      tiltRef.current.vanillaTilt.destroy();
+      }
+    };
+  }, []);
   return (
     <section className="about" id="about">
       <h2 className="heading">
         <i className="fas fa-user-alt"></i> About <span>Me</span>
       </h2>
       <div className="row">
-        <div className="image">
+        <div className="image" >
           <img
             draggable="false"
             className="tilt"
             src="/images/profile.jpg"
             alt="Profile"
+            ref={tiltRef}
           />
         </div>
         <div className="content">
