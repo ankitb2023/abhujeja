@@ -12,51 +12,72 @@ export const Skill = () => {
           <div className="col">
             <div className="bar">
               <div className="info">
-                <i className="fab fa-react"></i> <span>ReactJS</span>
-                <span>92%</span>
+                <i className="fab fa-java"></i> <span>Core Java</span>
+                <span></span>
+              </div>
+              <div className="line java"></div>
+            </div>
+            <div className="bar">
+              <div className="info">
+                <i className="fab fa-free-code-camp"></i>{' '}
+                <span>Data Structures and Algorithms</span>
+                <span></span>
               </div>
               <div className="line reactjs"></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i className="fab fa-node"></i> <span>Node.js</span>
-                <span>81%</span>
+                <i className="fab fa-react"></i> <span>ReactJS</span>
+                <span></span>
+              </div>
+              <div className="line node"></div>
+            </div>
+            <div className="bar">
+              <div className="info">
+                <i className="fab fa-reacteurope"></i> <span>Redux</span>
+                <span></span>
               </div>
               <div className="line node"></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i className="fas fa-layer-group"></i>{' '}
-                <span>BlockChain (Solidity)</span>
-                <span>82%</span>
+                <i className="fab fa-js-square"></i> <span>Javascript</span>
+                <span></span>
               </div>
               <div className="line blockchain"></div>
             </div>
 
             <div className="bar">
               <div className="info">
+                <i className="fas fa-database"></i> <span>Elasticsearch</span>
+                <span></span>
+              </div>
+              <div className="line blockchain"></div>
+            </div>
+
+            <div className="bar">
+              <div className="info">
+                <i className="fas fa-memory"></i> <span>Redis</span>
+                <span></span>
+              </div>
+              <div className="line java"></div>
+            </div>
+            <div className="bar">
+              <div className="info">
+                <i className="fas fa-laptop-code"></i> <span>SQL</span>
+                <span></span>
+              </div>
+              <div className="line java"></div>
+            </div>
+
+            <div className="bar">
+              <div className="info">
                 <i className="fab fa-html5"></i> <span>HTML</span>
-                <span>90%</span>
+                <span></span>
               </div>
               <div className="line html"></div>
-            </div>
-
-            <div className="bar">
-              <div className="info">
-                <i className="fab fa-css3-alt"></i> <span>CSS</span>
-                <span>89%</span>
-              </div>
-              <div className="line css"></div>
-            </div>
-
-            <div className="bar">
-              <div className="info">
-                <i className="fab fa-js-square"></i> <span>Javascript</span>
-                <span>87%</span>
-              </div>
-              <div className="line javascript"></div>
             </div>
           </div>
 
@@ -64,60 +85,74 @@ export const Skill = () => {
           <div className="col">
             <div className="bar">
               <div className="info">
-                <i className="fab fa-java"></i> <span>Core Java</span>
-                <span>91%</span>
+                <i className="fab fa-codiepie"></i> <span>C#</span>
+                <span></span>
               </div>
               <div className="line java"></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i className="fab fa-codiepie"></i> <span>C++</span>
-                <span>84%</span>
+                <i className="fas fa-code"></i>{' '}
+                <span>Object Oriented Programming</span>
+                <span></span>
               </div>
               <div className="line Cpp"></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i className="fab fa-contao"></i> <span>C#</span>
-                <span>89%</span>
+                <i className="fab fa-java"></i> <span>Spring Boot</span>
+                <span></span>
+              </div>
+              <div className="line clanguage"></div>
+            </div>
+            <div className="bar">
+              <div className="info">
+                <i className="fas fa-link"></i>{' '}
+                <span>RESTful API Development</span>
+                <span></span>
               </div>
               <div className="line clanguage"></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i className="fas fa-database"></i> <span>SQL</span>
-                <span>90%</span>
+                <i className="fab fa-node-js"></i> <span>TypeScript</span>
+                <span></span>
               </div>
               <div className="line sql"></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i className="fas fa-code-branch"></i>{' '}
-                <span>Git & GitHub | VCS</span>
-                <span>84%</span>
+                <i className="fas fa-chart-pie"></i> <span>Kibana</span>
+                <span></span>
               </div>
               <div className="line vcs"></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i className="fab fa-cloudflare"></i>{' '}
-                <span>Google Cloud Platform</span>
-                <span>78%</span>
+                <i className="fab fa-connectdevelop"></i> <span>WebSocket</span>
+                <span></span>
               </div>
               <div className="line gcp"></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i className="fas fa-server"></i> <span>Firebase</span>
-                <span>84%</span>
+                <i className="fas fa-server"></i> <span>DBMS</span>
+                <span></span>
               </div>
               <div className="line firebase"></div>
+            </div>
+            <div className="bar">
+              <div className="info">
+                <i className="fab fa-css3-alt"></i> <span>CSS</span>
+                <span></span>
+              </div>
+              <div className="line css"></div>
             </div>
           </div>
         </div>

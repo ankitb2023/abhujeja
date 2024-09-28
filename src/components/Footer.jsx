@@ -38,7 +38,7 @@ export const Footer = () => {
             <i className="fas fa-chevron-circle-right"></i> Projects
           </a>
           <a onClick={() => handleNavClick('experience')}>
-            <i className="fas fa-chevron-circle-right"></i> Internship |
+            <i className="fas fa-chevron-circle-right"></i> Experience |
             Volunteering | Contribution
           </a>
         </div>
@@ -47,7 +47,7 @@ export const Footer = () => {
         <div className="box">
           <h3>Contact Info</h3>
           <p>
-            <i className="fas fa-phone"></i> +91 951-861-4811
+            <i className="fas fa-phone"></i> +91 9518614811
           </p>
           <p>
             <i className="fas fa-envelope"></i> ankitbhujeja2468@gmail.com

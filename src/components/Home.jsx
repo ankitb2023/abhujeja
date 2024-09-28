@@ -17,9 +17,10 @@ export const Home = () => {
           <span className="typing-text">
             <ReactTyped
               strings={[
-                'Web Development',
+                'React.js Development',
+                'Java Application Development',
+                '.NET Application Development',
                 'Problem Solving',
-                'Full Stack Development',
               ]}
               typeSpeed={40}
               backSpeed={50}

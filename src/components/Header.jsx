@@ -47,20 +47,23 @@ export const Header = () => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
       let scrollPosition = window.scrollY;
- 
+
       sections.forEach((section) => {
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop - 300;
         const sectionId = section.getAttribute('id');
- 
-        if (scrollPosition > sectionTop && scrollPosition < sectionTop + sectionHeight) {
+
+        if (
+          scrollPosition > sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
           setActiveSection(sectionId);
         }
       });
     };
- 
+
     window.addEventListener('scroll', handleScroll);
- 
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -78,12 +81,16 @@ export const Header = () => {
       <nav className={`navbar ${menuOpen ? 'nav-toggle' : ''}`}>
         <ul>
           <li>
-            <a className={activeSection === 'home' ? 'active' : ''} onClick={() => handleNavClick('home')}>
+            <a
+              className={activeSection === 'home' ? 'active' : ''}
+              onClick={() => handleNavClick('home')}
+            >
               Home
             </a>
           </li>
           <li>
-            <a className={activeSection === 'about' ? 'active' : ''}
+            <a
+              className={activeSection === 'about' ? 'active' : ''}
               onClick={() => {
                 handleNavClick('about');
               }}
@@ -92,21 +99,44 @@ export const Header = () => {
             </a>
           </li>
           <li>
-            <a className={activeSection === 'skills' ? 'active' : ''} onClick={() => handleNavClick('skills')}>Skills</a>
-          </li>
-          <li>
-            <a className={activeSection === 'education' ? 'active' : ''} onClick={() => handleNavClick('education')}>Education</a>
-          </li>
-          <li>
-            <a className={activeSection === 'work' ? 'active' : ''} onClick={() => handleNavClick('work')}>Projects</a>
-          </li>
-          <li>
-            <a className={activeSection === 'experience' ? 'active' : ''} onClick={() => handleNavClick('experience')}>
-              Internships
+            <a
+              className={activeSection === 'skills' ? 'active' : ''}
+              onClick={() => handleNavClick('skills')}
+            >
+              Skills
             </a>
           </li>
           <li>
-            <a className={activeSection === 'contact' ? 'active' : ''} onClick={() => handleNavClick('contact')}>Contact</a>
+            <a
+              className={activeSection === 'education' ? 'active' : ''}
+              onClick={() => handleNavClick('education')}
+            >
+              Education
+            </a>
+          </li>
+          <li>
+            <a
+              className={activeSection === 'work' ? 'active' : ''}
+              onClick={() => handleNavClick('work')}
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              className={activeSection === 'experience' ? 'active' : ''}
+              onClick={() => handleNavClick('experience')}
+            >
+              Experience
+            </a>
+          </li>
+          <li>
+            <a
+              className={activeSection === 'contact' ? 'active' : ''}
+              onClick={() => handleNavClick('contact')}
+            >
+              Contact
+            </a>
           </li>
           <li>
             <img

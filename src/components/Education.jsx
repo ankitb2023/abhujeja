@@ -27,7 +27,7 @@ export const Education = () => {
               DCRUST
             </p>
             <h4>
-              2019 - 2023 | Pursuing | <span>CGPA: 8.62</span>
+              2019 - 2023 | <span>CGPA: 8.80</span>
             </h4>
           </div>
         </div>
@@ -45,7 +45,7 @@ export const Education = () => {
             <h3>Senior Secondary Education | Science</h3>
             <p>Govt. Sr. Sec. School, Hansi | HBSE</p>
             <h4>
-              2016-2018 | Completed | <span>88.2%</span>
+              2016-2018 | <span>88.2%</span>
             </h4>
           </div>
         </div>

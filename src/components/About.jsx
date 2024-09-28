@@ -2,20 +2,20 @@ import React, { useEffect, useRef } from 'react';
 import '../styles/About.css';
 import VanillaTilt from 'vanilla-tilt';
 export const About = () => {
-  const tiltRef = useRef(null); 
- 
+  const tiltRef = useRef(null);
+
   useEffect(() => {
-    if(tiltRef.current){
-    VanillaTilt.init(tiltRef.current, {
-      max: 15, 
-      speed: 400,
-      glare: true, 
-      'max-glare': 0.5,
-    });
-  }
+    if (tiltRef.current) {
+      VanillaTilt.init(tiltRef.current, {
+        max: 15,
+        speed: 400,
+        glare: true,
+        'max-glare': 0.5,
+      });
+    }
     return () => {
-      if(tiltRef.current && tiltRef.current.vanillaTilt){
-      tiltRef.current.vanillaTilt.destroy();
+      if (tiltRef.current && tiltRef.current.vanillaTilt) {
+        tiltRef.current.vanillaTilt.destroy();
       }
     };
   }, []);
@@ -25,11 +25,11 @@ export const About = () => {
         <i className="fas fa-user-alt"></i> About <span>Me</span>
       </h2>
       <div className="row">
-        <div className="image" >
+        <div className="image">
           <img
             draggable="false"
             className="tilt"
-            src="/images/profile.jpg"
+            src="/images/profileupdated.png"
             alt="Profile"
             ref={tiltRef}
           />
@@ -37,20 +37,25 @@ export const About = () => {
         <div className="content">
           <h3>I'm Ankit</h3>
           <span className="tag">
-            Passionate Full Stack Web Developer and Problem Solver
+            Software Engineer | Full Stack Web Developer
           </span>
           <p>
-            As a final year student in Electronic and Communication, I am
-            passionate about using technology to solve real-world problems.
+            I am a Software Engineer with 1.5 years of experience in full-stack
+            development, specializing in Core Java, ReactJS, and backend
+            technologies
             <br />
             <br />
-            During my studies, I have gained expertise in various programming
-            languages such as Java, C#, SQL, and C++. I have also developed
-            skills in software development methodologies, database management,
-            and Full Stack web development.
+            I have successfully modernized legacy systems, optimized API
+            integrations, and enhanced user monitoring using Elasticsearch and
+            Kibana. I excel in team leadership, having led cross-functional
+            teams, conducted knowledge transfer sessions, and automated manual
+            tasks to increase efficiency.
             <br />
-            Additionally, I have completed several projects that have
-            strengthened my understanding of software development.
+            <br />
+            My strong communication skills have allowed me to present project
+            demos to steering committees. I am passionate about solving complex
+            problems, driving innovation, and delivering scalable,
+            high-performance solutions in dynamic environments.
           </p>
           <div className="box-container">
             <div className="box">
